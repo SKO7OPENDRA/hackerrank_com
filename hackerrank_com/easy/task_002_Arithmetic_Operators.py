@@ -5,8 +5,12 @@
 # The third line contains the product of the two numbers.
 #
 # Input Format
-# The first line contains the first integer, . The second line contains the second integer, .
-
+# The first line contains the first integer, . The second line contains the second integer, b.
+# Constraints
+# 1 <= a <= 10**10
+# 1 <= b <= 10**10
+# Output Format
+# Print the three lines as explained above.
 
 a = int(input())
 b = int(input())
