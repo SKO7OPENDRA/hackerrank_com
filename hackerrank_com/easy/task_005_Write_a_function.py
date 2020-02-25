@@ -21,11 +21,16 @@
 # Output is taken care of by the template. Your function must return a boolean value (True/False)
 
 def is_leap(year):
-    if year % 4 == 0:
-        return True
-    else:
-        return False
+    leap = False
+
+    if (year % 4 == 0):
+        leap = True
+        if (year % 100 == 0):
+            leap = False
+            if (year % 400 == 0):
+                leap = True
+    return leap
 
 
 year = int(input())
-print(f'{year} {is_leap(year)}')
+print(is_leap(year))
